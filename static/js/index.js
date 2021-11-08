@@ -1,4 +1,11 @@
 
+function findPageDimensions() {
+    const pageWidth  = document.documentElement.scrollWidth;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    console.log(pageWidth, pageHeight);
+}
+
 
 function pageLoaded(fn) {
     if (document.readyState != 'loading') {
@@ -9,6 +16,6 @@ function pageLoaded(fn) {
     }
 }
   
-pageLoaded(function() {
-
+pageLoaded(function() {       
+    findPageDimensions(); 
 });

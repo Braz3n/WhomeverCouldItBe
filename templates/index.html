@@ -15,7 +15,7 @@
     <script src="/static/js/index.js"></script>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <section class="section">
         <div class="block">
             <h1 class="title is-4">Whomever Could It Be!?</h1>
@@ -180,6 +180,26 @@
             </div>
         </div>
     </section>
+
+    <div class="container is-clipped">
+        <div id="zoom-modal" class="modal">
+            <div id="zoom-modal-background" class="modal-background">
+    
+            </div>
+            <div class="modal-content">
+    
+                <div class="box has-text-centered">
+                    <figure class="image">
+                        <img id="zoom-modal-img" class="big-image" src="/static/img/03.png">
+                    </figure>
+                    <div id="zoom-modal-name" class="name">Alexa</div>
+                </div>
+                
+            </div>
+            <button id="zoom-modal-close" class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
+    
 </body>
 
 </html>

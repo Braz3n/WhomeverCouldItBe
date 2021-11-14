@@ -37,3 +37,13 @@
   margin-right:auto;
   margin-left: auto;
 }
+
+span.male {
+  color: blue;
+  font-weight: bold;
+}
+
+span.female {
+  color: red;
+  font-weight: bold;
+}

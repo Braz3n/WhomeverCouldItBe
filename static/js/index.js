@@ -36,8 +36,8 @@ function activateZoomModal(evt) {
     let zoomModal = document.getElementById("zoom-modal")
     zoomModal.classList.add("is-active");
     console.log(evt);
-    document.getElementById("zoom-modal-img").setAttribute("src", evt.originalTarget.src);
-    document.getElementById("zoom-modal-name").innerText = evt.originalTarget.parentNode.nextElementSibling.innerText;
+    document.getElementById("zoom-modal-img").setAttribute("src", evt.target.src);
+    document.getElementById("zoom-modal-name").innerText = evt.target.parentNode.nextElementSibling.innerText;
 }
 
 function deactivateZoomModal() {

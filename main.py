@@ -5,11 +5,10 @@ class IndexHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("index.html")
 
-def make_app(proxy_root):
+def make_app():
     app_settings = dict(
         template_path = "templates",
-        static_path = proxy_root + "static",
-        debug = True
+        static_path = "static"
     )
     return tornado.web.Application([
         (r"/", IndexHandler),
@@ -17,7 +16,6 @@ def make_app(proxy_root):
     **app_settings)
 
 if __name__ == "__main__":
-    proxy_root = "who/"
-    app = make_app(proxy_root)
+    app = make_app()
     app.listen(8898)
     tornado.ioloop.IOLoop.current().start()

@@ -9,10 +9,15 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Whomever Could It Be!?</title>
-    <link href="/static/css/bulma.css" rel="stylesheet" />
+    <!-- <link href="/static/css/bulma.css" rel="stylesheet" />
     <link href="/static/css/whomever.css" rel="stylesheet" />
     <script src="/static/js/howler.min.js"></script>
-    <script src="/static/js/index.js"></script>
+    <script src="/static/js/index.js"></script> -->
+
+    <link href="{{ static_url('/css/bulma.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('/css/whomever.css') }}" rel="stylesheet" />
+    <script src="{{ static_url('/js/howler.min.js' }}"></script>
+    <script src="{{ static_url('/js/index.js' }}"></script>
 </head>
 
 <body oncontextmenu="return false;">
